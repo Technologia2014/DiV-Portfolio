@@ -1,78 +1,180 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
     <title>Lettu's Portfolio</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <nav>
-            <div class="navbar">
-                <img src="./images/icon-dark-transparent.png" width="50px"/>
-                <h4 class="logo">Eunice Lettu</h4>
-                <ul class="links">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#work">Work</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-                <!-- <button class="bot">Chatbot</button> -->
-            </div>
-        </nav>
+      <nav>
+        <div class="navbar">
+          <img src="./images/icon-dark-transparent.png" width="50px" />
+          <h4 class="logo">Eunice Lettu</h4>
+          <ul class="links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact-footer">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
     </header>
     <main>
-        <section class="home">
-            <h1 class="hero-heading">I'm a Software Engineer</h1>
-            <h2 class="hero-subheading">Building Scalable Software,<br> One Line at a Time</h2>
-            <p class="hero-paragraph">Crafting clean code and seamless user experiences for the modern web.</p>
-        </section>
-        <section class="about" id="about">
-            <h2 class="section-heading">About</h2>
-            <div class="container-about">
-                <img class="profile-pic" src="./images/profile-pic.jpg" alt="picture of engineer"/>
-                <div class="info">
-                    <p>
-                        Hi, I'm <em><strong>Eunice Abena Lettu</strong></em>, a passionate and detail-oriented software engineer with a strong foundation in web development, problem-solving, and clean code principles.
-                        <br />
-                        With hands-on experience in JavaScript, TypeScript, React, and Python, I enjoy crafting responsive and accessible user interfaces, optimizing performance, and collaborating on scalable solutions that make a real-world impact. I believe great software is built at the intersection of clarity, creativity, and communication.
-                        <br />
-                        Over the past few years, I've contributed to diverse projects—ranging from e-commerce platforms and academic tools to open-source applications—always with a focus on usability, resilience, and maintainability.
-                    </p>
-                    <h3>My Mission</h3>
-                    <p>To build technology that is inclusive, efficient, and thoughtfully designed—while continuously improving as both a developer and a human.
-                    <br/>
-                    When I'm not coding, you'll find me mentoring others, learning about accessibility, or exploring creative hobbies like design and photography.</p>
-                    <hr/>
-                    <p>
-                        Want to work together or just say hi? <span><a href="#contact">Contact Me</a></span> — I'm always open to meaningful collaborations and exciting challenges!
-                    </p>
-                </div>
+      <section class="home">
+        <h1 class="hero-heading">I'm a Software Engineer</h1>
+        <h2 class="hero-subheading">
+          Building Scalable Software,<br />
+          One Line at a Time
+        </h2>
+        <p class="hero-paragraph">
+          Crafting clean code and seamless user experiences for the modern web.
+        </p>
+      </section>
+      <section class="about" id="about">
+        <h2 class="section-heading">About</h2>
+        <div class="container-about">
+          <img
+            class="profile-pic"
+            src="./images/profile-pic.jpg"
+            alt="picture of engineer"
+          />
+          <div class="info">
+            <p>
+              Hi, I'm <em><strong>Eunice Abena Lettu</strong></em
+              >, a passionate and detail-oriented software engineer with a
+              strong foundation in web development, problem-solving, and clean
+              code principles.
+              <br />
+              With hands-on experience in JavaScript, TypeScript, React, and
+              Python, I enjoy crafting responsive and accessible user
+              interfaces, optimizing performance, and collaborating on scalable
+              solutions that make a real-world impact. I believe great software
+              is built at the intersection of clarity, creativity, and
+              communication.
+              <br />
+              Over the past few years, I've contributed to diverse
+              projects—ranging from e-commerce platforms and academic tools to
+              open-source applications—always with a focus on usability,
+              resilience, and maintainability.
+            </p>
+            <h3>My Mission</h3>
+            <p>
+              To build technology that is inclusive, efficient, and thoughtfully
+              designed—while continuously improving as both a developer and a
+              human.
+              <br />
+              When I'm not coding, you'll find me mentoring others, learning
+              about accessibility, or exploring creative hobbies like design and
+              photography.
+            </p>
+            <hr />
+            <p>
+              Want to work together or just say hi?
+              <span><a href="#contact">Contact Me</a></span> — I'm always open
+              to meaningful collaborations and exciting challenges!
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="services" id="services">
+        <h2 class="section-heading">Services</h2>
+        <div class="container-services">
+          <div class="service-item">
+            <div class="info-icon">
+              <i class="fa-solid fa-code"></i>
             </div>
-        </section>
-        <section class="services" id="services">
-            <h2 class="section-heading">Services</h2>
-            <div class="container-services">
-                <div class="service-item">
-                    <h3>Web design</h3>
-                    <p>Lorem ipsum dolor sit amet.lorem</p>
-                </div>
-                
+            <div class="info-content">
+              <h3>Web design</h3>
+              <p>Building responsive, modern websites with clean code and optimized performance.</p>
             </div>
-        </section>
-        <section class="work" id="work">
-            <h2 class="section-heading">Work</h2>
-        </section>
-        <section class="contact" id="contact">
-            <h2 class="section-heading">Contact</h2>
-        </section>
+          </div>
+          <div class="service-item">
+            <div class="info-icon">
+              <i class="fa-solid fa-mobile-screen"></i>
+            </div>
+            <div class="info-content">
+              <h3>Mobile design</h3>
+              <p>Cross-platform mobile apps using Flutter or React Native tailored to your needs.</p>
+            </div>
+          </div>
+          <div class="service-item">
+            <div class="info-icon">
+              <i class="fa-solid fa-palette"></i>
+            </div>
+            <div class="info-content">
+              <h3>UI/UX design</h3>
+              <p>Intuitive user interfaces and accessible designs for websites and apps.</p>
+            </div>
+          </div>
+          <div class="service-item">
+            <div class="info-icon">
+              <i class="fa-solid fa-bug"></i>
+            </div>
+            <div class="info-content">
+              <h3>Debugging</h3>
+              <p>Fixing performance issues, bugs, and integrating smooth user experiences.</p>
+            </div>
+          </div>
+          <div class="service-item">
+            <div class="info-icon">
+              <i class="fa-solid fa-database"></i>
+            </div>
+            <div class="info-content">
+              <h3>Backend Development</h3>
+              <p>APIs, databases, and server-side logic using Python, Node.js & PostgreSQL.</p>
+            </div>
+          </div>
+          <div class="service-item">
+            <div class="info-icon">
+              <i class="fa-solid fa-cloud-arrow-up"></i>
+            </div>
+            <div class="info-content">
+              <h3>Deployment</h3>
+              <p>CI/CD, GitHub, and cloud deployment with Netlify, Vercel, or AWS.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="projects" id="projects">
+        <h2 class="section-heading">Projects</h2>
+      </section>
     </main>
-    <footer class="footer" >
+    <footer class="footer">
+         <div class="footer-container">
+            <div class="logos">
+                <img src="./images/icon-light-transparent.png" class="footer-logo" width="50px"/>
+                <h3>Eunice Lettu.</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos veniam, nesciunt ipsum eaque rem distinctio fugiat, dicta itaque debitis soluta ratione adipisci dolorem voluptatum quia vel illo cum veritatis perspiciatis.</p>
+                <i class="fa-solid fa-signature"></i>
+            </div>
+            <div class="footer-section">
+                <h3>Services</h3>
+                <ul>
+                    <li>Web Development</li>
+                    <li>Mobile Design</li>
+                    <li>UI/UX Design</li>
+                    <li>Backend Development</li>
+                    <li>Debugging</li>
+                    <li>Deploying</li>
+                    
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Me</h3>
+                <input type="email" placeholder="Enter your email"/>
+                <Address></Address>
+            </div>
+        </div>
+        <div class="copyright">&copy;Copyright@2025</div>
     </footer>
-    
 
     <script src="index.js"></script>
-</body>
+  </body>
 </html>
