@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Alex+Brush&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: "Poppins", "sans-serif";
+    font-weight: 400;
+}
+
+/* Styling the navbar */
+.navbar{
+    display: flex;
+    position: fixed;
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%);
+    width: 90%;
+    height: 70px;
+    background-color: rgb(46, 134, 171);
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 15px;
+    z-index: 1000;
+}
+.logo{
+    color: whitesmoke;
+    /* margin: 5px;
+    padding: 5px; */
+}
+.links{
+    display: flex;
+    list-style: none;
+}
+ul li a{
+    margin: 5px;
+    padding: 5px;
+    text-decoration: none;
+    color: whitesmoke;
+}
+/* .bot{
+    width: 100px;
+    height: 60px;
+} */
+
+/* Styling the home/hero section */
+.home{
+    width: 100vw;
+    height: 95vh;
+    background-color: #f6f5ae;
+    text-align: center;
+    align-content: center;
+}
+.hero-subheading{
+    font-size: 40px;
+    justify-content: flex-start;
+    color:#e03620f1;
+    word-spacing: 1px;
+    letter-spacing: 0.5px;
+    font-weight: 600;
+}
+/* styling the sections */
+.section-heading{
+    text-align: center;
+    padding: 5px;
+}
+
+/* Styling the about section */
+.about{
+    width: 100vw;
+    height: 95vh;
+    background-color: #f5f749;
+}
+.container-about{
+    display: flex;
+    margin: 10px;
+    padding: 5px;
+    align-items: center;
+    justify-content: space-around;
+}
+.profile-pic{
+    width: 300px;
+    border: 1px solid black;    
+}
+.info{
+    align-content: center;
+    margin: 10px;
+    width: 60vw;
+}
+.info h3{
+    padding: 3px;
+}
+hr{
+    border: none;
+    height: 3px;
+    background: linear-gradient(to right, #ff7e5f, #feb47b);
+    width: 70%;
+    margin: 30px auto;
+    border-radius: 5px;
+}
+/* Styling the services section */
+.services{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 95vh;
+    background-color: #F24236;
+}
+.container-services{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.service-item{
+    width: 300px;
+    height: 270px;
+    background-color: gray;
+    /* text-align: end; */
+}
+/* Styling the work section */
+.work{
+    width: 100vw;
+    height: 95vh;
+    background-color: #213E33;
+}
+/* Styling the contact section */
+.contact{
+    width: 100vw;
+    height: 95vh;
+    background-color: #2C667E;
+}
+/* Styling the footer section */
+.footer{
+    width: 100vw;
+    height: 95vh;
+    background-color: #0E171B;
+    color: whitesmoke;
+}
+
+
