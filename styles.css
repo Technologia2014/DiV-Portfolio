@@ -47,11 +47,14 @@ ul li a{
 
 /* Styling the home/hero section */
 .home{
+    display: flex;
+    flex-direction: column;
     width: 100vw;
     height: 95vh;
     background-color: #f6f5ae;
     text-align: center;
     align-content: center;
+    justify-content: center;
 }
 .hero-subheading{
     font-size: 40px;
@@ -65,6 +68,25 @@ ul li a{
 .section-heading{
     text-align: center;
     padding: 5px;
+}
+.social{
+    margin-top: 20px;
+}
+.social .fa-brands{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+    color: #2980b9;
+    background: #0E171B;
+    margin-right: 15px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.social .fa-brands:hover{
+    transform: translateY(-6px);
 }
 
 /* Styling the about section */
@@ -160,6 +182,69 @@ hr{
     width: 100vw;
     height: 95vh;
     background-color: #213E33;
+    color: #ccc;
+}
+#portfolio{
+    margin: 0 10px;
+    padding: 30px 0;
+    color: #ccc;
+}
+.work-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 10px;
+    margin-top: 50px;
+}
+.work{
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+.work img{
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.5s;
+}
+.layer{
+    width: 100%;
+    height: 0;
+    background:linear-gradient(rgba(0,0,0,0.6), #2c3e50);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    font-size: 14px;
+    transition: height 0.5s;
+}
+.layer h3{
+    font-weight: 500;
+    margin-bottom: 20px;   
+}
+.layer a{
+    margin-top: 20px;
+    color: #2c3e50;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 60px;
+    background: #fff;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+}
+.work:hover img {
+    transform: scale(1.1);
+}
+.work:hover .layer{
+    height: 100%;
 }
 /* Styling the footer/contact section */
 .footer {
@@ -187,10 +272,70 @@ hr{
   min-width: 250px;
   max-width: 400px;
 }
+.logos-title {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* spacing between img and h3 */
+}
+footer h3{
+    padding: 5px;
+}
 
 footer ul{
     list-style: none;
 }
 
+/* Form */
+form{
+    padding-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 50px ;
+}
+form .fa-envelope{
+    font-size: 18px;
+    margin-right: 10px;
+}
+form input{
+    width: 100%;
+    background: transparent;
+    color: #ccc;
+    border: 0;
+    outline: none;
+}
+form button{
+    background: transparent;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+}
+form button .fa-arrow-right{
+    font-size: 16px;
+    color: #ccc;
+}
+
+
+/* Address */
+ address {
+      padding: 20px;
+      line-height: 1.6;
+      max-width: 400px;
+    }
+
+    address strong {
+      font-size: 1.1em;
+      color: #2c3e50;
+    }
+
+    address a {
+      color: #2980b9;
+      text-decoration: none;
+    }
+
+    address a:hover {
+      text-decoration: underline;
+    }
 
 
