@@ -373,3 +373,81 @@ address a {
 address a:hover {
   text-decoration: underline;
 }
+
+/* responsiveness */
+/* ========= Responsive Animations ========== */
+
+/* Navbar shrink on smaller screens */
+@keyframes navbarResize {
+  from {
+    width: 90%;
+    height: 70px;
+  }
+  to {
+    width: 100%;
+    height: 60px;
+  }
+}
+
+/* Hero text scaling */
+@keyframes heroTextResize {
+  from {
+    font-size: 40px;
+  }
+  to {
+    font-size: 24px;
+  }
+}
+
+/* Services grid responsiveness */
+@keyframes servicesStack {
+  from {
+    flex-direction: row;
+  }
+  to {
+    flex-direction: column;
+  }
+}
+
+/* ========= Media Queries for Responsiveness ========== */
+
+/* Tablets */
+@media (max-width: 992px) {
+  .navbar {
+    animation: navbarResize 0.5s ease forwards;
+  }
+  .hero-subheading {
+    animation: heroTextResize 0.5s ease forwards;
+  }
+  .container-about {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+/* Mobile devices */
+@media (max-width: 600px) {
+  .container-services {
+    animation: servicesStack 0.5s ease forwards;
+  }
+  .service-item {
+    width: 90%;
+  }
+  .work-list {
+    grid-template-columns: 1fr;
+  }
+  .profile-pic {
+    width: 200px;
+  }
+}
+
+/* Smart TVs / Large Screens */
+@media (min-width: 1400px) {
+  .hero-subheading {
+    animation: heroTextResize 0.5s ease reverse forwards;
+    font-size: 60px;
+  }
+  .service-item {
+    transform: scale(1.1);
+  }
+}
