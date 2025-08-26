@@ -41,12 +41,6 @@ ul li a {
   text-decoration: none;
   color: whitesmoke;
 }
-/* .bot{
-    width: 100px;
-    height: 60px;
-} */
-
-
 
 /* Styling the home/hero section */
 .home {
@@ -64,15 +58,6 @@ ul li a {
   font-size: 4rem;
   font-family: monospace;
 }
-  /* .hero-heading span{
-  width: 22ch;
-  animation: typing 2s steps(22), blink .5s step-end infinite alternate;
-  white-space: nowrap;
-  overflow: hidden;
-  border-right: 3px solid;
-  font-family: monospace;
-} */
-
 @keyframes typing {
   from {
     width: 0
@@ -87,18 +72,12 @@ ul li a {
 .hero-heading span{
   position: relative;
 }
-.hero-heading span::before{
-  content: "make bugs cry";
-  color: purple;
-  animation: typing 2s steps(22), blink .5s step-end infinite alternate;
-  white-space: nowrap;
-  overflow: hidden;
-  border-right: 3px solid;
-}
+ .hero-heading span::before{
+  animation: none;
+ }
 .hero-heading span::after{
   content:"";
-  position: absolute;
-  border-left: 2px solid purple;
+  color: purple;
   animation: typing 2s steps(22), blink .5s step-end infinite alternate;
   white-space: nowrap;
   overflow: hidden;
@@ -207,18 +186,6 @@ ul li a {
   margin: 10px;
 }
 
-/* .info-content h3 {
-  margin: 0;
-  font-size: 20px;
-  color: #333;
-} */
-
-/* .info-content p {
-  margin-top: 8px;
-  color: #555;
-  font-size: 14px;
-  line-height: 1.5;
-} */
 .services hr {
   border: none;
   height: 3px;
@@ -320,78 +287,6 @@ ul li a {
   width: 450px;
   height: 400px;
 }
-/* .projects {
-  width: 100vw;
-  height: 95vh;
-  background-color: #213e33;
-  color: #ccc;
-}
-.portfolio {
-  margin: 0 10px;
-  padding: 30px 0;
-  color: #ccc;
-}
-.work-list {
-  display: flex;
-}
-.work {
-  border-radius: 10px;
-  position: relative;
-  height: 500vh;
-  overflow: hidden;
-}
-.work > div{
-  position: sticky;
-  top: 0;
-  overflow: hidden;
-  height: 100vh;
-}
-.work img {
-  width: 100%;
-  border-radius: 10px;
-  display: block;
-  transition: transform 0.5s;
-} */
-/* .layer {
-  width: 100%;
-  height: 0;
-  background: linear-gradient(rgba(0, 0, 0, 0.6), #2c3e50);
-  border-radius: 10px;
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  overflow: hidden;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  padding: 0 40px;
-  text-align: center;
-  font-size: 14px;
-  transition: height 0.5s;
-}
-.layer h3 {
-  font-weight: 500;
-  margin-bottom: 20px;
-}
-.layer a {
-  margin-top: 20px;
-  color: #2c3e50;
-  text-decoration: none;
-  font-size: 18px;
-  line-height: 60px;
-  background: #fff;
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  text-align: center;
-}
-.work:hover img {
-  transform: scale(1.1);
-}
-.work:hover .layer {
-  height: 100%;
-} */
 .progress {
   position: fixed;
   left: 0;
