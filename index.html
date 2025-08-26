@@ -8,6 +8,14 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
     />
     <link rel="stylesheet" href="styles.css" />
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "https://cdn.jsdelivr.net/npm/three@0.179.1/build/three.module.js",
+          "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.179.1/examples/jsm/"
+        }
+      }
+    </script>
     <title>Lettu's Portfolio</title>
   </head>
   <body>
@@ -28,10 +36,11 @@
     </header>
     <main>
       <section class="home">
-        <h1 class="hero-heading">Hey, I'm Lettu👋<br />
-          I <span></span></h1>
-        
-        
+        <h1 class="hero-heading">
+          Hey, I'm Lettu👋<br />
+          I <span></span>
+        </h1>
+        <div class="threeD"></div>
         <!-- <div class="social">
           <i class="fa-brands fa-linkedin"></i>
           <i class="fa-brands fa-instagram"></i>
@@ -269,5 +278,6 @@
     </footer>
     <div class="circle"></div>
     <script type="module" src="index.js"></script>
+    <!-- <script type="module" src="three.js"></script> -->
   </body>
 </html>

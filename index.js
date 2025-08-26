@@ -3,6 +3,7 @@ import {
   stagger,
   scroll,
 } from "https://cdn.jsdelivr.net/npm/motion@latest/+esm";
+// import * as THREE from 'three';
 
 //hero-page typewriter
 const dynamicText = document.querySelector(".hero-heading span");
